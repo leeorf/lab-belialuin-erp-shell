@@ -14,9 +14,5 @@ const mount = (el) => {
   );
 };
 
-if (process.env.NODE_ENV === "development") {
-  const devRoot = document.getElementById("app");
-  if (devRoot) {
-    mount(devRoot);
-  }
-}
+const devRoot = document.getElementById("app");
+mount(devRoot);
