@@ -8,8 +8,7 @@
     "build:start": "cd dist && PORT=8080 npx serve",
     "start": "webpack serve --open --mode development",
     "start:live": "webpack serve --open --mode development --live-reload --hot",
-    "predeploy": "pnpm build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "rimraf dist && pnpm build && gh-pages -d dist"
   },
   "license": "MIT",
   "author": {
@@ -31,6 +30,7 @@
     "html-webpack-plugin": "^5.3.2",
     "postcss": "^8.2.1",
     "postcss-loader": "^4.1.0",
+    "rimraf": "^4.1.2",
     "style-loader": "^3.3.0",
     "tailwindcss": "^2.0.2",
     "typescript": "^4.5.2",
