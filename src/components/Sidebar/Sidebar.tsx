@@ -55,7 +55,7 @@ export const Sidebar = () => {
               icon: (
                 <svg
                   aria-hidden="true"
-                  class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:group-hover:text-white dark:text-gray-400"
+                  className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:group-hover:text-white dark:text-gray-400"
                   focusable="false"
                   data-prefix="fas"
                   data-icon="gem"
